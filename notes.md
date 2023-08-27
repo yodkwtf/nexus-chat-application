@@ -24,3 +24,4 @@
 - next-auth
 - bcrypt
 - prisma
+- axios

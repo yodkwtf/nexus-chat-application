@@ -9,7 +9,7 @@ export async function POST(request: Request) {
 
     // check if user data provided
     if (!name || !email || !password) {
-      return new NextResponse('Missing user info', { status: 400 });
+      return new NextResponse('Please fill all the fields!', { status: 400 });
     }
 
     // hash password

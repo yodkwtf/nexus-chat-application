@@ -7,6 +7,7 @@ import { useForm, FieldValues, SubmitHandler } from 'react-hook-form';
 import AuthSocialButton from './AuthSocialButton';
 import { BsGithub, BsGoogle } from 'react-icons/bs';
 import axios from 'axios';
+import { toast } from 'react-hot-toast';
 
 type Variant = 'LOGIN' | 'REGISTER';
 
@@ -30,7 +31,21 @@ const AuthForm = () => {
     setIsLoading(true);
 
     if (variant === 'REGISTER') {
-      axios.post('/api/register', data);
+      axios
+        .post('/api/register', data)
+        .then(() => toast.success('Account created!'))
+        .catch((err) => {
+          const errorCode = err.response.status;
+
+          if (errorCode === 400) {
+            toast.error('Please fill all fields!');
+          } else if (errorCode === 409) {
+            toast.error('Email already exists!');
+          } else {
+            toast.error('Something went wrong!');
+          }
+        })
+        .finally(() => setIsLoading(false));
     }
 
     if (variant === 'LOGIN') {

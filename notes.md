@@ -25,3 +25,4 @@
 - bcrypt
 - prisma
 - axios
+- react-hot-toast

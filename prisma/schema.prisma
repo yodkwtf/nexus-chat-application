@@ -51,3 +51,37 @@ model Account {
 
   @@unique([provider, providerAccountId])
 }
+
+
+model Conversation {
+  id                 String   @id @default(auto()) @map("_id") @db.ObjectId
+  createdAt          DateTime @default(now())
+  lastMessageAt      DateTime @default(now())
+  name               String?
+  isGroup            Boolean?
+
+  // @relations fields
+  userIds            String[] @db.ObjectId
+  users              User[]   @relation(fields: [userIds], references: [id])
+
+  messagesIds        String[] @db.ObjectId
+  messages           Message[]
+}
+
+
+model Message {
+  id                 String   @id @default(auto()) @map("_id") @db.ObjectId
+  body               String?
+  image              String?
+  createdAt          DateTime @default(now())
+  
+  // @relations fields
+  seenIds            String[] @db.ObjectId
+  seen               User[]   @relation("Seen", fields: [seenIds], references: [id])
+
+  conversationId     String   @db.ObjectId
+  conversation       Conversation @relation(fields: [conversationId], references: [id], onDelete: Cascade)
+
+  senderId           String   @db.ObjectId
+  sender             User     @relation(fields: [senderId], references: [id], onDelete: Cascade)
+}

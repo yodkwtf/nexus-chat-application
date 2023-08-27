@@ -12,9 +12,15 @@
 - TypeScript
 - Tailwind CSS
 - React
+- Prisma
+- MongoDB
+- NextAuth
 
 ## Packages
 
 - react-icons
 - react-hook-form
 - clsx
+- next-auth
+- bcrypt
+- prisma

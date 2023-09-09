@@ -19,7 +19,7 @@ export const authOptions: AuthOptions = {
       async authorize(credentials) {
         // check if user details are passed
         if (!credentials?.email || !credentials?.password) {
-          throw new Error('Invalid credentials');
+          throw new Error('Please enter your credentials');
         }
 
         // find user in database

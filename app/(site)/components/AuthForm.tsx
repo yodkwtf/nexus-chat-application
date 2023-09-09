@@ -8,6 +8,7 @@ import AuthSocialButton from './AuthSocialButton';
 import { BsGithub, BsGoogle } from 'react-icons/bs';
 import axios from 'axios';
 import { toast } from 'react-hot-toast';
+import { signIn } from 'next-auth/react';
 
 type Variant = 'LOGIN' | 'REGISTER';
 
@@ -38,7 +39,7 @@ const AuthForm = () => {
           const errorCode = err.response.status;
 
           if (errorCode === 400) {
-            toast.error('Please fill all fields!');
+            toast.error('Please enter your name, email and password!');
           } else if (errorCode === 409) {
             toast.error('Email already exists!');
           } else {
@@ -49,14 +50,39 @@ const AuthForm = () => {
     }
 
     if (variant === 'LOGIN') {
-      // NextAuth SignIn
+      signIn('credentials', {
+        ...data,
+        redirect: false,
+      })
+        .then((res) => {
+          if (res?.error) {
+            toast.error(res.error);
+          }
+
+          if (res?.ok && !res?.error) {
+            toast.success('Logged in!');
+          }
+        })
+        .finally(() => setIsLoading(false));
     }
   };
 
   const socialAction = (action: string) => {
     setIsLoading(true);
 
-    // NextAuth Social SignIn
+    signIn(action, {
+      redirect: false,
+    })
+      .then((res) => {
+        if (res?.error) {
+          toast.error(res.error);
+        }
+
+        if (res?.ok && !res?.error) {
+          toast.success('Logged in!');
+        }
+      })
+      .finally(() => setIsLoading(false));
   };
 
   return (

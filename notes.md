@@ -26,3 +26,7 @@
 - prisma
 - axios
 - react-hot-toast
+
+## ToDos
+
+- [ ] Add twitter login

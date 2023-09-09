@@ -1,6 +1,7 @@
 ## Pages
 
-- `app/(site)/page.tsx` - Home page
+- `app/(site)/page.tsx` - Register/Login page
+- `app/users/page.tsx` - Homepage
 
 ## Bookmarks
 

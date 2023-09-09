@@ -30,4 +30,7 @@
 
 ## ToDos
 
+- [ ] Add green deekayy branding
 - [ ] Add twitter login
+  - [ ] find twitter client id and secret
+  - [ ] add twitter to images domains in next config

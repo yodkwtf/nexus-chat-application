@@ -1,7 +1,8 @@
 ## Pages
 
 - `app/(site)/page.tsx` - Register/Login page
-- `app/users/page.tsx` - Homepage
+- `app/users/page.tsx` - Users page
+- `app/conversations/page.tsx` - Conversations page
 
 ## Bookmarks
 
@@ -27,6 +28,7 @@
 - prisma
 - axios
 - react-hot-toast
+- date-fns
 
 ## ToDos
 

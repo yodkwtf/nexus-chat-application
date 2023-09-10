@@ -31,6 +31,7 @@
 ## ToDos
 
 - [ ] Add green deekayy branding
+- [ ] Change app name to ChitChat
 - [ ] Add twitter login
   - [ ] find twitter client id and secret
   - [ ] add twitter to images domains in next config

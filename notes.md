@@ -3,6 +3,7 @@
 - `app/(site)/page.tsx` - Register/Login page
 - `app/users/page.tsx` - Users page
 - `app/conversations/page.tsx` - Conversations page
+- `app/conversations/[id]/page.tsx` - Single Conversation page
 
 ## Bookmarks
 

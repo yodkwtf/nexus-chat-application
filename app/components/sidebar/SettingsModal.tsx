@@ -51,7 +51,7 @@ const SettingsModal: React.FC<SettingsModalProps> = ({
     setIsLoading(true);
 
     axios
-      .post('/api/settings', data)
+      .post('/api/profile', data)
       .then(() => {
         router.refresh();
         onClose();

@@ -33,6 +33,7 @@
 - next-cloudinary
 - @headlessui/react
 - react-select
+- react-spinners
 
 ## ToDos
 

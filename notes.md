@@ -32,10 +32,12 @@
 - date-fns
 - next-cloudinary
 - @headlessui/react
+- react-select
 
 ## ToDos
 
 - [ ] Add green deekayy branding
+- [ ] Fix group members count issue (doesn't count the group creator)
 - [ ] Change app name to ChitChat
 - [ ] Add twitter login
   - [ ] find twitter client id and secret

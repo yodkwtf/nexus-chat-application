@@ -7,5 +7,5 @@ export default withAuth({
 });
 
 export const config = {
-  matcher: ['/users/:path*'], // pages that should be protected
+  matcher: ['/users/:path*', '/conversations/:path*'], // pages that should be protected
 };

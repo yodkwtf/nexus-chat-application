@@ -31,6 +31,7 @@
 - react-hot-toast
 - date-fns
 - next-cloudinary
+- @headlessui/react
 
 ## ToDos
 

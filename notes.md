@@ -37,7 +37,7 @@
 ## ToDos
 
 - [ ] Add green deekayy branding
-- [ ] Fix group members count issue (doesn't count the group creator)
+- [ ] Check getConversationById action for members count issue
 - [ ] Change app name to ChitChat
 - [ ] Add twitter login
   - [ ] find twitter client id and secret

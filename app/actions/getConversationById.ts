@@ -12,13 +12,7 @@ const getConversationById = async (conversationId: string) => {
         id: conversationId,
       },
       include: {
-        users: {
-          where: {
-            id: {
-              not: currentUser.id,
-            },
-          },
-        },
+        users: true,
       },
     });
 

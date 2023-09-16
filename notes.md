@@ -30,6 +30,7 @@
 - axios
 - react-hot-toast
 - date-fns
+- next-cloudinary
 
 ## ToDos
 

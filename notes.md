@@ -44,6 +44,7 @@
 
 - [ ] Add green deekayy branding
 - [ ] Check getConversationById action for members count issue
+- [ ] Watch the project intro again to see any missing features
 - [ ] Change app name to ChitChat
 - [ ] Add twitter login
   - [ ] find twitter client id and secret

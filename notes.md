@@ -38,6 +38,7 @@
 - pusher-js
 - lodash
 - @types/lodash (dev)
+- zustand
 
 ## ToDos
 

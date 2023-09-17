@@ -42,10 +42,23 @@
 
 ## ToDos
 
-- [ ] Add green deekayy branding
 - [ ] Check getConversationById action for members count issue
-- [ ] Watch the project intro again to see any missing features
-- [ ] Change app name to ChitChat
 - [ ] Add twitter login
   - [ ] find twitter client id and secret
   - [ ] add twitter to images domains in next config
+- [ ] Watch the project intro again to see any missing features
+- [ ] Change app name to Nexus
+- [ ] Add a favicon & logo for Nexus
+- [ ] Add green deekayy branding
+- [ ] Add logo to social login platforms
+- [ ] Write the documentation
+- [ ] Add project to portfolio & linkedin
+
+## Platforms Used
+
+- [Pusher](https://pusher.com/) - Secondary Email
+- [Cloudinary](https://cloudinary.com/) - Secondary Email
+- [MongoDB](https://www.mongodb.com/) - Secondary Email
+- [Vercel](https://vercel.com/) - Primary Email
+- [GitHub - Social Login] - Primary Email
+- [Google - Social Login] - Primary Email

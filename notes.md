@@ -34,6 +34,10 @@
 - @headlessui/react
 - react-select
 - react-spinners
+- pusher
+- pusher-js
+- lodash
+- @types/lodash (dev)
 
 ## ToDos
 

@@ -4,14 +4,14 @@ import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import clsx from 'clsx';
 import { MdOutlineGroupAdd } from 'react-icons/md';
-import { FullConversationTypes } from '@/app/types';
+import { FullConversationType } from '@/app/types';
 import useConversation from '@/app/hooks/useConversation';
 import ConversationBox from './ConversationBox';
 import GroupChatModal from './GroupChatModal';
 import { User } from '@prisma/client';
 
 interface ConversationListProps {
-  initialConversations: FullConversationTypes[];
+  initialConversations: FullConversationType[];
   users: User[];
 }
 

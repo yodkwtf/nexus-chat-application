@@ -41,9 +41,8 @@ const UserBox: React.FC<UserBoxProps> = ({ user }) => {
         <Avatar user={user} />
         <div className="min-w-0 flex-1">
           <div className="focus:outline-none">
-            <div className="flex justify-between items-center mb-1">
-              <p className="text-sm font-medium text-gray-900">{user.name}</p>
-            </div>
+            <p className="text-sm font-medium text-gray-900">{user.name}</p>
+            <p className="text-sm text-gray-500">{user.email}</p>
           </div>
         </div>
       </div>

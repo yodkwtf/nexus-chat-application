@@ -8,7 +8,7 @@ import ActiveStatus from './components/ActiveStatus';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'D-Chat',
+  title: 'Nexus - A Realtime Chat Application',
   description: 'A chat application built by Durgesh',
 };
 

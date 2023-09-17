@@ -42,7 +42,7 @@ const Header: React.FC<HeaderProps> = ({ conversation }) => {
       <div className="bg-white w-full flex border-b-[1px] sm:px-4 py-3 px-4 lg:px-6 justify-between items-center shadow-sm">
         <div className="flex gap-3 items-center">
           <Link
-            className="lg:hidden block text-sky-500 hover:text-sky-600 transition cursor-pointer"
+            className="lg:hidden block text-cyan-500 hover:text-cyan-600 transition cursor-pointer"
             href="/conversations"
           >
             <HiChevronLeft size={32} />
@@ -65,7 +65,7 @@ const Header: React.FC<HeaderProps> = ({ conversation }) => {
         </div>
 
         <HiEllipsisHorizontal
-          className="text-sky-500 cursor-pointer hover:text-sky-600 transition"
+          className="text-cyan-500 cursor-pointer hover:text-cyan-600 transition"
           size={32}
           onClick={() => setDrawerOpen(true)}
         />

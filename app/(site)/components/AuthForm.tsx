@@ -72,7 +72,7 @@ const AuthForm = () => {
           }
 
           if (res?.ok && !res?.error) {
-            toast.success('Logged in!');
+            toast.success('Entering Nexus!');
             router.push('/users');
           }
         })
@@ -92,7 +92,7 @@ const AuthForm = () => {
         }
 
         if (res?.ok && !res?.error) {
-          toast.success('Logged in!');
+          toast.success('Entering Nexus!');
         }
       })
       .finally(() => setIsLoading(false));
@@ -167,7 +167,7 @@ const AuthForm = () => {
           <span>
             {variant === 'REGISTER'
               ? 'Already have an account?'
-              : 'New to D-Chat?'}
+              : 'New to Nexus?'}
           </span>
           <button
             type="button"

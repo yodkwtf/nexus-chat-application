@@ -8,13 +8,13 @@ export default function Home() {
         <Image
           alt="logo"
           className="mx-auto w-auto"
-          height={48}
-          width={48}
-          src="/images/logo.svg"
+          height={64}
+          width={64}
+          src="/images/logo.png"
         />
 
         <h2 className="mt-6 text-center text-3xl font-bold text-gray-900 tracking-tight">
-          Welcome to D-Chat!
+          Welcome to Nexus!
         </h2>
       </div>
 

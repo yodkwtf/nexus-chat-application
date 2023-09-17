@@ -43,7 +43,7 @@ const Form = () => {
         onUpload={handleUpload}
         uploadPreset="jkyytcex"
       >
-        <HiPhoto size={30} className="text-sky-500" />
+        <HiPhoto size={30} className="text-cyan-500" />
       </CldUploadButton>
       <form
         onSubmit={handleSubmit(onSubmit)}
@@ -58,7 +58,7 @@ const Form = () => {
         />
         <button
           type="submit"
-          className="rounded-full p-2 bg-sky-500 cursor-pointer hover:bg-sky-600 transition"
+          className="rounded-full p-2 bg-cyan-500 cursor-pointer hover:bg-cyan-600 transition"
         >
           <HiPaperAirplane size={20} className="text-white" />
         </button>

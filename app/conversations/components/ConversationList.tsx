@@ -98,6 +98,7 @@ const ConversationList: React.FC<ConversationListProps> = ({
             <div className="text-2xl font-bold text-neutral-800">Chats</div>
             <div
               onClick={() => setIsModalOpen(true)}
+              title="Create a group chat"
               className="rounded-full p-2 bg-gray-100 text-gray-600 cursor-pointer hover:opacity-75 transition"
             >
               <MdOutlineGroupAdd size={20} />

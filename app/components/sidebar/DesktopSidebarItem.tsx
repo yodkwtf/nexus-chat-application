@@ -25,7 +25,7 @@ const DesktopSidebarItem: React.FC<DesktopSidebarItemProps> = ({
   };
 
   return (
-    <li onClick={handleClick}>
+    <li onClick={handleClick} title={label}>
       <Link
         href={href}
         className={clsx(

@@ -16,12 +16,6 @@ const MobileFooterItem: React.FC<MobileFooterItemProps> = ({
   active,
   onClick,
 }) => {
-  const handleClick = () => {
-    if (onClick) {
-      onClick();
-    }
-  };
-
   return (
     <Link
       href={href}

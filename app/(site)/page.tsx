@@ -14,8 +14,9 @@ export default function Home() {
         />
 
         <h2 className="mt-6 text-center text-3xl font-bold text-gray-900 tracking-tight">
-          Welcome to Nexus!
+          Nexus!
         </h2>
+        <h3 className="mt-4 text-center">Your Ultimate Chat Experience</h3>
       </div>
 
       {/* Auth Form */}

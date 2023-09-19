@@ -62,3 +62,4 @@
 - [Vercel](https://vercel.com/) - Primary Email
 - [GitHub - Social Login] - Primary Email
 - [Google - Social Login] - Primary Email
+- [Twitter - Social Login] - Primary Email

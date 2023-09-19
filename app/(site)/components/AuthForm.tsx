@@ -5,7 +5,7 @@ import Input from '@/app/components/input/Input';
 import { useState, useCallback, useEffect } from 'react';
 import { useForm, FieldValues, SubmitHandler } from 'react-hook-form';
 import AuthSocialButton from './AuthSocialButton';
-import { BsGithub, BsGoogle } from 'react-icons/bs';
+import { BsGithub, BsGoogle, BsTwitter } from 'react-icons/bs';
 import axios from 'axios';
 import { toast } from 'react-hot-toast';
 import { signIn, useSession } from 'next-auth/react';
@@ -158,6 +158,10 @@ const AuthForm = () => {
             <AuthSocialButton
               icon={BsGoogle}
               onClick={() => socialAction('google')}
+            />
+            <AuthSocialButton
+              icon={BsTwitter}
+              onClick={() => socialAction('twitter')}
             />
           </div>
         </article>

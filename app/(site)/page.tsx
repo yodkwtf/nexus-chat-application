@@ -13,15 +13,20 @@ export default function Home() {
           <h1 className="text-4xl font-bold mb-2 text-center text-white">
             Welcome to Nexus Chat!
           </h1>
-          <p className="text-lg my-6 mx-auto text-white">
+          <p className="text-lg my-6 mx-auto text-center text-white">
             Your Ultimate Chat Experience
           </p>
-          <p className="text-sm opacity-90 mx-auto text-white">
+          <p className="text-sm opacity-90 mx-auto text-center text-white">
             Join Nexus Chat today and connect with others effortlessly.
           </p>
-          <button className="mt-8 bg-white text-cyan-500 hover:bg-cyan-700 hover:text-white py-2 px-8 rounded-full font-semibold shadow-md transition duration-300 ease-in-out w-auto max-w-lg mx-auto">
-            Get Started
-          </button>
+          <a
+            href="https://github.com/yodkwtf/nexus-chat-application"
+            className="mt-8 bg-gray-800  hover:bg-cyan-700 text-white py-2 px-8 rounded-full font-semibold shadow-md transition duration-300 ease-in-out w-auto max-w-lg mx-auto"
+            title="GitHub Repository"
+            target="_blank"
+          >
+            GitHub Code
+          </a>
         </div>
       </div>
 

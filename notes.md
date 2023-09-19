@@ -42,16 +42,17 @@
 
 ## ToDos
 
-- [ ] Check getConversationById action for members count issue
-- [ ] Add twitter login
-  - [ ] find twitter client id and secret
-  - [ ] add twitter to images domains in next config
-- [ ] Watch the project intro again to see any missing features
-- [ ] Change app name to Nexus
-- [ ] Add a favicon & logo for Nexus
-- [ ] Add green deekayy branding
+- [x] Check getConversationById action for members count issue
+- [x] Add twitter login
+  - [x] find twitter client id and secret
+  - [x] add twitter to images domains in next config
+- [x] Watch the project intro again to see any missing features
+- [x] Change app name to Nexus
+- [x] Add a favicon & logo for Nexus
+- [x] Add green deekayy branding
 - [ ] Add logo to social login platforms
-- [ ] Write the documentation
+- [x] Add github url to get started btn
+- [x] Write the documentation
 - [ ] Add project to portfolio & linkedin
 
 ## Platforms Used
@@ -63,3 +64,7 @@
 - [GitHub - Social Login] - Primary Email
 - [Google - Social Login] - Primary Email
 - [Twitter - Social Login] - Primary Email
+
+## Short Description
+
+The Nexus Chat Application is a modern chat platform powered by Next.js, TypeScript, Tailwind CSS, MongoDB, Prisma, NextAuth, and more. It features real-time chatting, group creation, profile customization, online status tracking, and image uploads. The implementation of various authentication methods, including email and OAuth with Github, Google, and Twitter, enhances user accessibility.

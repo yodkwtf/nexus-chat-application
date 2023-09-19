@@ -1,34 +1,107 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Nexus Chat Application
 
-## Getting Started
+![Nexus Chat Application](./app/opengraph-image.jpg)
 
-First, run the development server:
+Nexus Chat Application is a modern chat application built with the latest technologies, including Next.js, TypeScript, Tailwind CSS, MongoDB, Prisma, and NextAuth. It features real-time chatting, group creation, profile customization, online status tracking, image uploads, and various authentication methods, including email and social logins with Github, Google, and Twitter. This README will provide comprehensive documentation for setting up, running, and customizing the application.
+
+## Demo
+
+View the live demo at [Nexus Chat Application Demo](https://nexus-dk.vercel.app/)
+
+## Features
+
+- **Real-Time Chatting**: Enjoy real-time chat with other users.
+- **Group Creation**: Create chat groups for multiple users.
+- **Profile Customization**: Update your name and profile picture.
+- **Online Status**: See live active/offline status for users.
+- **Image Uploads**: Share images in chats using Cloudinary.
+- **Multiple Authentication Methods**: Sign in or sign up using email, Github, Google, and Twitter.
+
+## Tech Stack
+
+- **Next.js**: A popular React framework for building web applications.
+- **TypeScript**: A statically typed superset of JavaScript.
+- **Tailwind CSS**: A utility-first CSS framework for designing modern and responsive UIs.
+- **Headless UI**: A set of completely unstyled, fully accessible UI components for React.
+- **React**: A JavaScript library for building user interfaces.
+- **Prisma**: A modern database toolkit for TypeScript and Node.js.
+- **MongoDB**: A NoSQL database for storing chat data.
+- **NextAuth**: An authentication library for Next.js applications.
+- **Zustand**: A small, fast, and scalable state management library for React.
+- **Pusher**: A hosted service that makes it super-easy to add real-time data and functionality to web and mobile applications.
+- **Cloudinary**: A cloud service that offers a solution to a web application's entire image management pipeline.
+
+## Installation
+
+Follow these steps to set up the Nexus Chat Application locally:
+
+1. Clone the repository
+
+```bash
+git clone https://github.com/yodkwtf/nexus-chat-application.git
+cd nexus-chat-application
+```
+
+2. Install dependencies
+
+```bash
+npm install
+```
+
+3. Create a `.env.local` file in the root directory of the project and add the following environment variables:
+
+```bash
+DATABASE_URL=<YOUR_MONGODB_CONNECTION_STRING>
+NEXTAUTH_SECRET=<YOUR_NEXTAUTH_SECRET>
+
+GITHUB_ID=<YOUR_GITHUB_CLIENT_ID>
+GITHUB_SECRET=<YOUR_GITHUB_CLIENT_SECRET>
+
+GOOGLE_ID=<YOUR_GOOGLE_CLIENT_ID>
+GOOGLE_SECRET=<YOUR_GOOGLE_CLIENT_SECRET>
+
+NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME=<YOUR_CLOUDINARY_CLOUD_NAME>
+
+NEXT_PUBLIC_PUSHER_APP_KEY=<YOUR_PUSHER_APP_KEY>
+PUSHER_APP_ID=<YOUR_PUSHER_APP_ID>
+PUSHER_SECRET=<YOUR_PUSHER_SECRET>
+```
+
+4. Start the development server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+5. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Contributing
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Contributions to this project are welcome. If you'd like to contribute, please follow these steps:
 
-## Learn More
+1. Fork this repository.
 
-To learn more about Next.js, take a look at the following resources:
+2. Create a new branch for your feature or bug fix:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+git checkout -b <YOUR_BRANCH_NAME>
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+3. Make the appropriate changes to the files and commit changes:
 
-## Deploy on Vercel
+```bash
+git add .
+git commit -m "<YOUR_COMMIT_MESSAGE>"
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+4. Push to the branch:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+```bash
+git push origin <YOUR_BRANCH_NAME>
+```
+
+5. View the changes in your fork and create a pull request.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.

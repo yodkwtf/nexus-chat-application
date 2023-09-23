@@ -50,10 +50,10 @@
 - [x] Change app name to Nexus
 - [x] Add a favicon & logo for Nexus
 - [x] Add green deekayy branding
-- [ ] Add logo to social login platforms
+- [x] Add logo to social login platforms
 - [x] Add github url to get started btn
 - [x] Write the documentation
-- [ ] Add project to portfolio & linkedin
+- [x] Add project to portfolio & linkedin
 
 ## Platforms Used
 

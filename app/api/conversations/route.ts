@@ -19,7 +19,9 @@ export async function POST(request: Request) {
 
     // if all data is there for group
     if (isGroup && (!members || !name || members.length < 2)) {
-      return new NextResponse('Bad Request', { status: 400 });
+      return new NextResponse('Group should atleast have 3 members', {
+        status: 400,
+      });
     }
 
     // create group chats
